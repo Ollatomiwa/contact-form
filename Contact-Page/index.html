@@ -8,14 +8,16 @@
 </head>
 <body>
     <div class="contact-container">
-        <form action="" method="post" class="contact-left">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="contact-left-title">
                 <h2>Get in touch</h2>
                 <hr>
             </div>
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <button type="submit">Submit <img src="" alt=""</button>
         </form>
         <div class="contact-right">
